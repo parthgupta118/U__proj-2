@@ -17,7 +17,8 @@
  * Define Global Variables
  * 
 */ 
-
+const navBar = document.getElementById('navbar__list');
+const navbarList = document.getElementsByTagName('section');
 /**
  * End Global Variables
  * Start Helper Functions
@@ -36,8 +37,6 @@ function sectionViewport(section) {
 */
 
 // build the nav
-const navBar = document.getElementById('navbar__list');
-const navbarList = document.getElementsByTagName('section');
 for(let i = 0; i < navbarList.length; i++)
 {
     let navItem = document.createElement("LI");
@@ -72,7 +71,6 @@ window.addEventListener('scroll', function() {
     {
         if(sectionViewport(section[i]))
         {
-            console.log(section[i]);
             section[i].classList.add('your-active-class');
             navItems[i].style.backgroundColor = 'blue';
         }
