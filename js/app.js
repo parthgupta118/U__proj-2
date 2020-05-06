@@ -47,23 +47,7 @@ for(let i = 0; i < navbarList.length; i++)
 
 var navItems = document.getElementsByTagName('li');
 var section = document.getElementsByTagName('section');
-// Add class 'active' to section when near top of viewport
 
-
-// Scroll to anchor ID using scrollTO event
-// function getSection(section) {
-//     document.querySelector(section).scrollIntoView({behavior: 'smooth'});
-// }
-
-/**
- * End Main Functions
- * Begin Events
- * 
-*/
-
-// Build menu 
-
-// Scroll to section on link click
 
 // Set sections as active
 window.addEventListener('scroll', function() {
